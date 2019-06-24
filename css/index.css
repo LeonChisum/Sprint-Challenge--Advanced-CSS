@@ -166,6 +166,9 @@ p {
 }
 .top-page {
   background-color: #F6F6F6;
+  position: fixed;
+  width: 100%;
+  opacity: 0.7;
 }
 .top-page h1 {
   text-align: center;
@@ -183,6 +186,9 @@ p {
   text-decoration: none;
   font-size: 1.3rem;
   color: #454A59;
+}
+.top-page nav a:hover {
+  font-weight: bolder;
 }
 footer {
   color: #22283B;
@@ -283,6 +289,10 @@ footer {
   padding: 5px 0;
   border-radius: 5px;
 }
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: grey;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -305,4 +315,44 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.contact {
+  text-align: center;
+  height: 800px;
+  color: white;
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #5e6164 42%, #00d4ff 100%);
+}
+.contact img {
+  width: 100%;
+  border-radius: 5px;
+}
+.contact h2 {
+  padding: 15px;
+  color: white;
+}
+.contact p {
+  padding: 10px 15px;
+}
+form label {
+  font-size: 1.2rem;
+}
+form input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 30%;
+}
+form textarea {
+  width: 30%;
+  height: 60px;
+}
+form button {
+  width: 20%;
+  padding: 7px 0;
+  margin-top: 30px;
+  background-color: #81848E;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }

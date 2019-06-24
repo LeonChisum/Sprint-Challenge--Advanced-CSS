@@ -45,13 +45,13 @@
     }
 
     .sky {
-      @media @phone{
+      @media @phone {
         display: none;
       }
     }
 
     .launch {
-      @media @phone{
+      @media @phone {
         display: none;
       }
     }
@@ -99,6 +99,10 @@
 
       .btn {
         .sign-btn(@btn-bg-color, white);
+        &:hover{
+          color: @btn-bg-color;
+          background-color: grey;
+        }
 
         @media @phone {
           width: 100%;
@@ -128,3 +132,55 @@
     }
   }
 }// home
+  
+  .contact {
+    
+    text-align: center;
+    height: 800px;
+    color: white;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(94,97,100,1) 42%, rgba(0,212,255,1) 100%);
+    
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    h2 {
+      padding: 15px;
+      color: white;
+    
+    }
+
+    p {
+      padding:10px 15px;
+    }
+  
+  }
+
+  form {
+    label {
+      font-size: 1.2rem;
+    }
+    
+    input {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 30%;
+    }
+
+    textarea {
+      width: 30%;
+      height: 60px;
+    }
+    button{
+      width: 20%;
+      padding: 7px 0;
+      margin-top: 30px;
+      background-color: @waterloo;
+      color: white;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+    }
+  }
